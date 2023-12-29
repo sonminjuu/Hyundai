@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/pc1920.css" rel="stylesheet" type="text/css">
+    <link href="css/1440.css" rel="stylesheet" type="text/css">
+    <link href="css/1200.css" rel="stylesheet" type="text/css">
+    <link href="css/760.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            var boxWidth=$(".img_wrap_in_1").width(); 
+              $("#next_2").click(function(){
+                  $(".img_wrap_2").animate({
+                      left: -boxWidth, 
+                  },1000,function(){
+                      $(".img_wrap_2").css({
+                          left:0,
+                      }).find(".img_wrap_in_1:first").appendTo(".img_wrap_2");
+                  });
+              });
+
+              $("#prev_2").click(function(){
+                  $(".img_wrap_2").animate({
+                      left:0,
+                  },1000,function(){
+                      $(".img_wrap_2").css({
+                          left: -boxWidth,
+                      }).find(".img_wrap_in_1:last").prependTo(".img_wrap_2");
+                  });
+              });
+             
+
+            setInterval(function(){
+                $("#next_2").trigger("click");
+            },3500);
+            $(window).resize(function(){
+                boxWidth=$(".img_wrap_in_1").width();
+            });
+
+
+
+            var boxWidth2=$(".img_wrap_in_1_2").width();
+              $("#next_2_2").click(function(){
+                  $(".img_wrap_2_2").animate({
+                      left: -boxWidth2, 
+                  },1000,function(){
+                      $(".img_wrap_2_2").css({
+                          left:0,
+                      }).find(".img_wrap_in_1_2:first").appendTo(".img_wrap_2_2");
+                  });
+              });
+
+              $("#prev_2_2").click(function(){
+                  $(".img_wrap_2_2").animate({
+                      left:0,
+                  },1000,function(){
+                      $(".img_wrap_2_2").css({
+                          left: -boxWidth2,
+                      }).find(".img_wrap_in_1_2:last").prependTo(".img_wrap_2_2");
+                  });
+              });
+             
+
+            setInterval(function(){
+                $("#next_2_2").trigger("click");
+            },3500);
+
+            $(window).resize(function(){
+                boxWidth2=$(".img_wrap_in_1_2").width();
+            });
+          
+
+
+
+        }); //end
+        
+    </script>
+    
+</head>
+<body>
+    <div id="wrap">
+
+        <header id="pc_header">
+
+            <nav id="top_nav">
+                <div class="align_nav">
+                    <div id="search_login_box">
+                        <div id="search_box">
+                            <span>search <input type="text"></span>
+                        </div>
+                        <ul id="login_box">
+                
+                            <li>개인로그인</li>
+                            <li>법인로그인</li>
+                            <li>회원가입</li>
+                            <li>채용</li>
+                            <li>언어</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav id="bot_nav">
+                <div class="align_nav">
+                    <div id="logo">
+                        <img src="img/logo.svg">
+                    </div>
+                    <ul id="main_menu">
+                        <li>온라인견적</li>
+                        <li>차량소개</li>
+                        <li>고객지원</li>
+                        <li>회사소개</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="bot_nav_2">
+                <div class="align_nav_2">
+                    <div id="logo_2">
+                        <img src="img/logo.svg">
+                    </div>
+                    <ul id="main_menu_2">
+                        <li><img src="img/My Page Icon Tab.png" alt="마이페이지 아이콘"></li>
+                        <li id="tab_click"><img src="img/tab_click.png" alt="메뉴바 아이콘"></li>
+                        <li id="mobile_clicks"><img src="img/mobile_clicks.png"></li>
+                    </ul>
+                </div>
+            </nav>
+    
+    
+    
+    
+    
+    </header>
+
+
+    <header id="menu_tap">
+
+        <div class="tap_box1">
+            <div class="tap_box1_in">
+                <div class="tap_logo">
+                    <img src="img/logo.svg">
+                </div>
+                <div class="tap_x_icon">
+                    <img src="img/close.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="tap_box2">
+                <h1>검색을 입력해주세요</h1>
+        </div>
+
+        <div id="tap_box3">
+            <div class="tap_box3_in_1">
+            <ul class="tap_box3_in">모델
+                <li class="tap_box3_in_in">아반떼</li>
+                <li class="tap_box3_in_in">펠리세이드</li>
+                <li class="tap_box3_in_in">소나타</li>
+                <li class="tap_box3_in_in">그랜저</li>
+            </ul>
+
+            <ul class="tap_box3_in">구매
+                <li class="tap_box3_in_in">전기차 구매가이드</li>
+                <li class="tap_box3_in_in">사양 조회하기</li>
+                <li class="tap_box3_in_in">구매 프로그램</li>
+                <li class="tap_box3_in_in">구매 서비스</li>
+            </ul>
+
+            <ul class="tap_box3_in">체험
+                <li class="tap_box3_in_in">온라인VR시승</li>
+                <li class="tap_box3_in_in">오프라인 시승</li>
+                <li class="tap_box3_in_in">전시장위치</li>
+                <li class="tap_box3_in_in">체험문의</li>
+            </ul>
+        </div>
+
+        <div class="tap_box3_in_1">
+
+            <ul class="tap_box3_in_2">브랜드
+                <li class="tap_box3_in_in">브랜드스토리</li>
+                <li class="tap_box3_in_in">공장투어</li>
+                <li class="tap_box3_in_in">현대 모터스튜디오</li>
+                <li class="tap_box3_in_in">모터스포츠</li>
+            </ul>
+
+            <ul class="tap_box3_in_2">회사소개
+                <li class="tap_box3_in_in">기업정보</li>
+                <li class="tap_box3_in_in">사업망</li>
+                <li class="tap_box3_in_in">지속가능경영</li>
+                <li class="tap_box3_in_in">홍보실</li>
+            </ul>
+
+            <ul class="tap_box3_in_2">고객센터
+                <li class="tap_box3_in_in">고객센터 안내</li>
+                <li class="tap_box3_in_in">자주하는 질문</li>
+                <li class="tap_box3_in_in">1:1문의</li>
+                <li class="tap_box3_in_in">서비스네트워크</li>
+            </ul>
+        </div>
+        </div>
+
+        <div id="tap_box4">
+
+            <div class="tap_box4_inbox">
+
+            <div class="tap_box4_in">
+                <div class="tap_box4_in_in_1">
+                    <img src="img/tap_box4_1.png" alt="내차만들기">
+                </div>
+                <div class="tap_box4_in_in_2">내 차 만들기</div>
+            </div>
+        
+
+            <div class="tap_box4_in">
+                <div class="tap_box4_in_in_1">
+                    <img src="img/tap_box4_2.png" alt="구매상담신청">
+                </div>
+                <div class="tap_box4_in_in_2">구매상담신청</div>
+            </div>
+        </div>
+
+        <div class="tap_box4_inbox">
+            <div class="tap_box4_in">
+                <div class="tap_box4_in_in_1">
+                    <img src="img/tap_box4_3.png" alt="이달의구매혜택">
+                </div>
+                <div class="tap_box4_in_in_2">이달의구매혜택</div>
+            </div>
+
+            <div class="tap_box4_in">
+                <div class="tap_box4_in_in_1">
+                    <img src="img/tap_box4_4.png" alt="시승신청">
+                </div>
+                <div class="tap_box4_in_in_2">시승신청</div>
+            </div>
+        </div>
+        </div>
+
+        <div id="tap_box5">
+            <div class="tap_box5_in">로그인</div>
+            <div class="tap_box5_in">회원가입</div>
+        </div>
+
+    </header>
+    <header id="menu_mobile">
+        <div class="mobile_box1">
+            <div class="mobile_box1_in">
+                <div class="mobile_logo">
+                    <img src="img/logo.svg">
+                </div>
+                <div class="mobile_x_icon">
+                    <img src="img/close.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_box2">
+            <ul calss="mobile_box2_in">개인로그인</ul>
+            <ul calss="mobile_box2_in">법인로그인</ul>
+            <ul calss="mobile_box2_in">회원가입</ul>
+            <ul calss="mobile_box2_in">LANDUAGE</ul>
+        </div>
+
+        <div class="mobile_box3">
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">모델</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">구메</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">체험</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">멤버스</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">고객센터</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+            <div class="mobile_box3_in">
+                <div class="mobile_box3_left">마이페이지</div>
+                <div class="mobile_box3_right"><img src="img/mobile button.png" alt="모바일버튼"></div>
+            </div>
+        </div>
+
+        <div id="mobile_box4">
+
+            <div class="mobile_box4_inbox">
+
+            <div class="mobile_box4_in">
+                <div class="mobile_box4_in_in_1">
+                    <img src="img/tap_box4_1.png" alt="내차만들기">
+                </div>
+                <div class="mobile_box4_in_in_2">내 차 만들기</div>
+            </div>
+        
+
+            <div class="mobile_box4_in">
+                <div class="mobile_box4_in_in_1">
+                    <img src="img/tap_box4_2.png" alt="구매상담신청">
+                </div>
+                <div class="mobile_box4_in_in_2">구매상담신청</div>
+            </div>
+        </div>
+
+        <div class="mobile_box4_inbox">
+            <div class="mobile_box4_in">
+                <div class="mobile_box4_in_in_1">
+                    <img src="img/tap_box4_3.png" alt="이달의구매혜택">
+                </div>
+                <div class="mobile_box4_in_in_2">이달의구매혜택</div>
+            </div>
+
+            <div class="mobile_box4_in">
+                <div class="mobile_box4_in_in_1">
+                    <img src="img/tap_box4_4.png" alt="시승신청">
+                </div>
+                <div class="mobile_box4_in_in_2">시승신청</div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+        <section id="sec1">
+
+    <div class="sec1_align_2"> 
+        <div class="img_wrap_2"> 
+   
+            <div class="img_wrap_in_1"> 
+                <img src="img/main_1.jpg" alt="투싼">         
+            </div>
+
+            <div class="img_wrap_in_1"> 
+                <img src="img/main_2.jpg" alt="소나타">
+              
+            </div>
+            <div class="img_wrap_in_1"> 
+                <img src="img/main_3.png" alt="아반떼">
+                
+            </div>
+        </div>
+        <div class="btn" id="prev_2">◀</div>
+        <div class="btn" id="next_2">▶</div>
+    </div>
+
+    <div class="sec1_align_2_2">
+        <div class="img_wrap_2_2">
+   
+            <div class="img_wrap_in_1_2"> 
+                <img src="img/mobile main design1.jpg" alt="투싼">           
+            </div>
+
+            <div class="img_wrap_in_1_2"> 
+                <img src="img/mobile main design2.jpg" alt="소나타">
+            </div>
+
+            <div class="img_wrap_in_1_2"> 
+                <img src="img/mobile main design3.jpg" alt="아반떼">        
+            </div>
+
+        </div>
+
+        <div class="btn" id="prev_2_2">◀</div>
+        <div class="btn" id="next_2_2">▶</div>
+
+    </div>
+
+            </div>
+        </section>
+
+        <section id="sec2" data-aos="fade-up"
+        data-aos-duration="3000">
+        
+            <div class="sec234_align">
+                <div class="sec_namebox">
+                    <div>BEST H</div>
+                    <div>ALL PRODUCTS</div>
+                </div>
+
+                <article id="sec2_leftbox" >
+                    <img src="img/sec2_1.jpg" alt="펠리세이드">
+                    <ul id="sec2_top_left">
+                        <li>
+                                                        
+                        </li>
+                        <li class="sec2_textbox">
+                            <span class="chair_name1">펠리세이드</span>
+                            <span class="chair_txt">PALISADE</span>
+                        </li>
+                        
+                    </ul>
+                    <ul id="sec2_bot_left">
+                        <li>
+                            <img src="img/sec2_2.jpg" alt="투싼">
+                        </li>
+                        <li class="sec2_textbox">
+                            <span class="chair_name">투싼</span>
+                            <span class="chair_txt">TUCSON</span>
+                        </li>
+
+                    </ul>
+                    
+                </article>
+                <article id="sec2_rightbox">
+                    <ul id="sec2_top_right">
+                        <li>
+                        <img src="img/sec2_3.jpg" alt="아반떼">
+                    </li>
+                        <li class="sec2_textbox">
+                            <span class="chair_name1">아반떼</span>
+                            <span class="chair_txt">AVANTE</span>
+                        </li>
+                    </ul>
+
+                    <ul id="sec2_bot_right">
+                        <li>
+                        <img src="img/sec2_4.jpg" alt="그랜저"></li>
+                        <li class="sec2_textbox">
+                            <span class="chair_name">그랜저</span>
+                            <span class="chair_txt">GRANDEUR</span>
+                        </li>
+                    </ul>
+            </article>
+            </div>
+
+        </section>
+
+        <section id="sec3">
+              <div class="sec234_align">
+            <div class="sec_namebox">
+             <div id="sec_namebox_1_1">EVENT</div>
+             <div>ALL PRODUCTS</div>
+
+            </div>
+
+   
+            <div class="swiper mySwiper swiper_event">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/event1.jpg" alt="event1"></div>
+                  <div class="swiper-slide"><img src="img/event2.jpg" alt="event2"></div>
+                  <div class="swiper-slide"><img src="img/event3.jpg" alt="event3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      spaceBetween: 10
+    });
+  </script>
+  
+
+            <div id="sec3_con">
+             <ul class="sec3_box sec3_box1"  data-aos="fade-up" data-aos-duration="3000">
+                 <li>
+                <img src="img/event1.jpg" alt="event1"></li>
+                 <li class="sec3_txtbox">
+                     <span class="sec3_chair_name">H=EAR 패널 가입하고 <br>CU모바일  상품권  받아가세요</span>
+                     <span class="sec3_chair_txt">2021-08-02~2021-08-30</span>
+                 </li>
+             </ul>
+
+             <ul class="sec3_box" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <li>
+                <img src="img/event2.jpg" alt="event2"></li>
+                <li class="sec3_txtbox">
+                    <span class="sec3_chair_name">8월 현대자동차 구매상담 이벤트</span>
+                    <span class="sec3_chair_txt">2021-08-02~2021-08-31</span>
+                </li>
+            </ul>
+
+            <ul class="sec3_box sec3_box1" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600">
+                <li>
+                <img src="img/event3.jpg" alt="event3"></li>
+                <li class="sec3_txtbox">
+                    <span class="sec3_chair_name">불법연수 바로알기 이벤트</span>
+                    <span class="sec3_chair_txt">2021-08-04~2021-12-31</span>
+                </li>
+            </ul>
+
+            </div>
+
+            </div>  
+        </section>
+
+        <script>
+            AOS.init();
+          </script>
+
+
+        <section id="sec4">
+         <div class="sec234_align">
+
+             <ul id="news_box">
+                 <li id="news">NEWS</li>
+                 <li><span>시디즈 이용약관 및 개인정보 처리방침 개정 사전안내 </span></li>
+                 <li>전체보기</li>
+             </ul>
+
+             <div id="insta_box">
+                 <ul id="insta_id">
+                     <li><img src="img/blog.png"></li>
+                     <li>@ABOUT_HYUNDAI</li>
+                 </ul>
+
+             <div id="insta_img_box">
+                 <div class="insta_img"><img src="img/sns6-1.jpg"></div>
+                 <div class="insta_img"><img src="img/sns6-2.jpg"></div>
+                 <div class="insta_img"><img src="img/sns6-3.jpg"></div>
+                 <div class="insta_img"><img src="img/sns6-4.jpg"></div>
+                 <div class="insta_img"><img src="img/sns6-5.jpg"></div>
+              </div>    
+             </div>
+
+
+             <div id="top_box">
+                 <div id="tip_box_txt">
+                     <ul id="tip_box_txt1">
+                    <li></li>
+                    <li>현대 CHOICE TIP</li>
+                     </ul>
+                     <span id="tip_box_txt2">
+                        'N 브랜드 총 출동' 현대차, 아반떼 코나 투싼 한번에 만난다
+                     </span>
+
+                     <p id="tip_box_txt3">
+                        8월 국내 개봉 예정인 영화 <스네이크 아이즈: 지.아이.조>에 신스틸러로 등장한 쏘나타 N 라인의 한정판 스페셜 에디션 
+                        ‘더 블랙(The Black)’ 역시 N 시티 서울 특별전시를 통해 
+                        첫 선을 ...
+                        
+                        이번 N 시티 서울은 N 브랜드의 가치와 고성능차 문화를 종합적으로 느껴볼 수 있는 복합 전시 공간으로 구성돼 고객들이 N 브랜드 가치에 대한 이해도를 직관적으로 높이는데 도움을 줄 것으로 기대된다.
+                     </p>
+
+                     <a href="#" id="learn">LEARN MORE</a>
+                 </div>
+                 <div id="tip_box_img"><img src="img/pik.jpg"></div>
+             </div>
+       </div>
+  </section>
+
+      
+         
+        <footer>
+            <div class="footer1">
+                <div class="footer_inbox1">
+                    <div id="footer_menu">
+                    <img src="img/logo_footer.webp">
+          
+                    <h1>모바일APP</h1> 
+                    <h1>저작권안내</h1> 
+                    <h1>개인정보 처리방침</h1> 
+                    <h1>이용약관</h1> 
+                    <h1>윤리경영 사이버검사실</h1> 
+                    <h1>영상정보처리기기 운영관리방침</h1> 
+                    <h1>사이트맵</h1>
+                   </div>
+                   
+                    <div class="footer_inbox1_in">
+                        <img src="img/facebookIcon.svg">
+                        <img src="img/instaIcon.svg">
+                        <img src="img/blogIcon.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer2">
+                <div class="footer2_box">
+                    <img src="img/footer2_box1.png" alt="웹 접근성 품질인증">
+                    <h1>웹 접근성 품질인증</h1>
+                </div>
+                <div class="footer2_box">
+                    <img src="img/footer2_box2.png" alt="우수디자인 지식경제부선정">
+                    <h1>우수디자인  지식경제부선정</h1>
+                </div>
+                <div class="footer2_box">
+                    <img src="img/footer2_box3.png" alt="가족친화 우수기관">
+                    <h1>가족친화 우수기관</h1>
+                </div>
+                <div class="footer2_box">
+                    <img src="img/footer2_box4.png" alt="2019년  한국서비스품질지수  (KS-SQI)자동차  A/S부문 5년연속">
+                    <h1>2019년  한국서비스품질지수 <br> (KS-SQI)자동차  A/S부문 5년연속</h1>
+                </div>
+                <div class="footer2_box">
+                    <img src="img/footer2_box5.png" alt="한국품질만족지수">
+                    <h1>2020년 한국품질만족지수 <br>
+                        (ks-qei)조사 <br>
+                        10개부문 1위 <br>
+                        (승용, suv, <br>
+                        자동차as전부문)</h1>
+                </div>
+                <div class="footer2_box">
+                    <img src="img/footer2_box6.png" alt="국가고객만족도">
+                    <h1>2021년 국가고객만족도   <br>
+                        (ncsi)자동차기업  <br>
+                        최초 조사대상 전부문 8년연속   <br>
+                        1위수상(준중형,중형,준대형,대형,rv)</h1>
+                </div>
+
+            </div>
+
+            <div class="footer3">
+                <div class="footer3_box">
+                    <h1>고객센터:080-600-6000(승용),080-200-6000(상용)</h1>
+                    <h1>COPYRIGHT ⓒHYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</h1>
+                   
+                </div>
+
+            </div>
+
+        </footer>
+
+        
+        <div class="footer3_right_box">
+            <div class="footer_box_in">
+                <button>
+                    <img src="img/find.png">
+                    <h1>매장찾기</h1>
+                </button>
+            </div>
+            <div class="footer_box_in">
+                <button>
+                    <img src="img/question.png">
+                    <h1>챗봇문의</h1>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
